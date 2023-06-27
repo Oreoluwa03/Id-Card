@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ID Card</title>
+  
+   <link rel="stylesheet" href="./css/atropos.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="bg" class="flex w-screen h-screen flex-col justify-center items-center px-2 bg-gray-100">
+    <div class="atropos my-atropos">
+     <div class="atropos-scale">
+       <div class="atropos-rotate">
+         <div class="atropos-inner bg-white rounded-lg h-52 w-80 drop-shadow-md">
+            <div class="p-4">
+               <h3 class="text-green-900 text-xl font-monospace">Federal University Oye Ekiti</h3>
+            </div>
+            
+            <div class="w-full bg-green-700 h-6 text-white text-center mt-2 opacity-75">
+               <span>Student Identity Card</span>
+            </div>
+         
+            <div class="flex p-4">
+               <img class="w-20 h-20 rounded-md" src="./img/user.jpeg" data-atropos-offset="-1" />
+           
+             <div class="flex flex-col px-2 text-xs">
+               <div data-atropos-offset="0">
+                  <span class="text-green-700 font-bold">Name:</span>
+                  <span>John Doe</span>
+               </div>
+             
+               <div data-atropos-offset="0">
+                  <span class="text-green-700 font-bold">Matric Number:</span>
+                  <span>CPE/12994/102</span>
+               </div>
+             
+               <div data-atropos-offset="0">
+                 <span class="text-green-700 font-bold">Department:</span>
+                 <span>Computer Engineering</span>
+               </div>
+            </div>
+        </div>
+
+        <img class="w-40 h-40 opacity-25 absolute -right-10 -bottom-10" src="./img/logo.png" data-atropos-offset="-1" />
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+  
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta/dist/vanta.net.min.js"></script>-->
+<script src="./js/atropos.min.js"></script>
+
+<script>
+/*
+VANTA.NET({
+  el: "#bgv",
+  mouseControls: !true,
+  touchControls: !true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x3f82ff,
+  points: 19.00,
+  spacing: 20.00
+/*  el: "#your-element-selector",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x243526,
+  shininess: 150.00,
+  waveHeight: 3.00,
+  waveSpeed: 1.70,
+  zoom: 0.65*/
+//})*/
+//
+const myAtropos = Atropos({
+  el: '.my-atropos',
+  activeOffset: 10,
+ shadowScale: .08,
+});
+
+</script>
+</body>
+</html>
